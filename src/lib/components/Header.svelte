@@ -1,7 +1,7 @@
 <header>
   <nav>
     <div>
-      <a href="/">IA Templte Development Page</a> from <a href="http//:russellbits.com">Russellbits</a>
+      <a href="/">IA Template Development Page</a> from <a href="http//:russellbits.com">Russellbits</a>
     </div>
     <div class="right">
       <a href="/about">About</a>
