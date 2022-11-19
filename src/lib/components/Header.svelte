@@ -12,9 +12,10 @@
 <style lang="scss">
 header {
   color: white;
-  background-color: #333;
+  background-color: rgb(147, 37, 189);
   margin: 0;
   width: 100%;
+  position: sticky;
 }
 nav {
   display: flex;
