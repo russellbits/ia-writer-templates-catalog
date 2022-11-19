@@ -2,7 +2,7 @@
 <script>
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
-import '$lib/styles/house.scss'
+import '$lib/stylesheets/house.scss'
 </script>
 
 <Header />
