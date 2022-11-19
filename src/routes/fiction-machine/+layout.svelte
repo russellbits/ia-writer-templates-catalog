@@ -8,5 +8,7 @@ import './fiction-machine.scss'
 </main>
 
 <style>
-/* Page specific layout css */
+main {
+  padding: 2em 4em 2em 4em;
+}
 </style>
