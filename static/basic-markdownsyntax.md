@@ -1,6 +1,6 @@
-# The Somewhat Condescending Guide to Markdown
+# A Raccoon's Guide to Markdown
 
-The above is a 1st level header that is created by typing `# The Quixotic Guide to Markdown` into a text document. With the right converter, you'll be able to convert that markdown to nicely formatted HMTL. In this case, you'd end up with `<h1>The Quixotic Guide to Markdown</h1>` which some people think is harder to type than `# The Quixotic Guide to Markdown`. I'm one of those people.
+The above is a 1st level header that is created by typing `# A Raccoon's Guide to Markdown` into a text document. With the right converter, you'll be able to convert that markdown to nicely formatted HMTL. In this case, you'd end up with `<h1>The Quixotic Guide to Markdown</h1>` which some people think is harder to type than `# The Quixotic Guide to Markdown`. I'm one of those people.
 
 Also, there should really only be one of these headers. It's like a book title—you just need one. *And* if you have a good title, you don't need a colon and then some dumb title that more specifically and less creatively explains the title.
 
