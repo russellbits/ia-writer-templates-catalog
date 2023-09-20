@@ -2,9 +2,13 @@
 	import Text from '$lib/components/TemplateNavText.md';
 </script>
 
-<sidebar>
+<div>
 	<Text />
-</sidebar>
+</div>
 
 <style>
+	:root {
+		color: white;
+		background-color: black;
+	}
 </style>
