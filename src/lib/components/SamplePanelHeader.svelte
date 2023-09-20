@@ -1,5 +1,5 @@
 <script>
-	import snarkdown from 'snarkdown';
+	//import snarkdown from 'snarkdown';
 
 	let md = `
     # iA Writer Template catalog
@@ -9,7 +9,7 @@
 </script>
 
 <div>
-	{@html snarkdown(md)}
+	<h1>Sample Panel</h1>
 </div>
 
 <style></style>

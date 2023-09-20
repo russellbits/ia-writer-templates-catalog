@@ -10,6 +10,7 @@
 <Header />
 
 <main id="ui">
+	<slot />
 	<TemplateNav />
 	<SamplePanel />
 </main>

@@ -1,5 +1,5 @@
 <script>
-	import SvelteMarkdown from 'svelte-markdown';
+	//import SvelteMarkdown from 'svelte-markdown';
 
 	const source = `
 	## Fiction Machine 
@@ -14,7 +14,8 @@
 </script>
 
 <sidebar>
-	<SvelteMarkdown {source} />
+	Sidebar.
+	<!-- <SvelteMarkdown {source} /> -->
 </sidebar>
 
 <style>
