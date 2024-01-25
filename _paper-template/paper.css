@@ -1,0 +1,13 @@
+* {
+}
+
+body {
+	background-color: #666;
+}
+
+article {
+	background-color: white;
+	width: 8.5in;
+	margin: auto;
+	padding: 2em;
+}
