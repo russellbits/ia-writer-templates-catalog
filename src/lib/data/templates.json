@@ -1,0 +1,25 @@
+{
+	"templates": [
+		{
+			"id": "fiction-machine",
+			"name": "Fiction Machine",
+			"description": "A template designed for fiction writers, featuring clean typography and distraction-free reading experience.",
+			"stylesheetPath": "/fiction-machine/Resources/style.css",
+			"previewImage": "images/preview-fiction-machine.png"
+		},
+		{
+			"id": "fira",
+			"name": "FirA",
+			"description": "A modern template using the Fira font family, perfect for technical writing and documentation.",
+			"stylesheetPath": "/FirA/Resources/style.css",
+			"previewImage": "images/preview-fira.png"
+		},
+		{
+			"id": "tufte",
+			"name": "Tufte",
+			"description": "A modern template based on the formatting of the famous Edward Tufte's books.",
+			"stylesheetPath": "/Tufte/Resources/style.css",
+			"previewImage": "images/preview-tufte.png"
+		}
+	]
+}

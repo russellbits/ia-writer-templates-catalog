@@ -1,11 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
+	import { selectedStylesheet } from '$lib/stores/stylesheet';
 
 	let iframe;
 
-	onMount(async () => {
-		if (!iframe?.contentWindow) return;
+	$: if (iframe?.contentDocument && $selectedStylesheet) {
+		updateIframeContent();
+	}
 
+	async function updateIframeContent() {
 		try {
 			const response = await fetch('/markdown');
 			const markdown = await response.text();
@@ -16,7 +19,7 @@
         <!DOCTYPE html>
         <html>
           <head>
-            <link rel="stylesheet" href="/fiction-machine/Resources/style.css">
+            <link rel="stylesheet" href="${$selectedStylesheet}">
             <style>
               body {
                 margin: 0;
@@ -40,6 +43,11 @@
 		} catch (error) {
 			console.error('Error loading markdown:', error);
 		}
+	}
+
+	onMount(() => {
+		if (!iframe?.contentWindow) return;
+		updateIframeContent();
 	});
 </script>
 

@@ -1,24 +1,22 @@
-# The Somewhat Condescending Guide to Markdown
+# A Raccoon's Guide to Markdown
 
-The above is a 1st level header that is created by typing `# The Somewhat Condescending Guide to Markdown` into a text document. With the right converter, you'll be able to convert that markdown to nicely formatted HTML. In this case, you'd end up with `<h1>The Somewhat Condescending Guide to Markdown</h1>` which some people think is harder to type than `# The Somewhat Condescending Guide to Markdown`. I'm one of those people.
+The above is a 1st level header that is created by typing `# A Raccoon's Guide to Markdown` into a text document. With the right converter, you'll be able to convert that markdown to nicely formatted HMTL. In this case, you'd end up with `<h1>The Quixotic Guide to Markdown</h1>` which some people think is harder to type than `# The Quixotic Guide to Markdown`. I'm one of those people.
 
-Also, there should really only be one of these headers. It's like a book title—you just need one. _And_ if you have a good title, you don't need a colon and then some dumb title that more specifically and less creatively explains the title.
+Also, there should really only be one of these headers. It's like a book title—you just need one. *And* if you have a good title, you don't need a colon and then some dumb title that more specifically and less creatively explains the title.
 
-## A Snippy guide to using markdown written in markdown
+## A guide to using markdown written in markdown
 
 See? You knew that. There really didn't need to be this subtitle explaining the original title. At any rate, the above is a second level header, written in markdown like this:
 
-`
-
-## A Snippy guide to using markdown written in markdown
-
-`
+```
+## A guide to using markdown written in markdown
+```
 
 Second level headers are generally chapter titles within a long piece that has the title of the first level heading. Are you seeing a pattern yet? No? Check this out:
 
 ### This is a section header about third level headers
 
-Guess how I wrote out the above header in markdown?
+Guess how I wrote out the above header in markdown.
 
 ```
 ### This is a section header about third level headers
@@ -54,28 +52,28 @@ h5 {
 
 If you don't know CSS, ignore the above. But DO notice how pretty the code block is. I might as well tell you now that it's accomplished with three ticks, a line break and then three more ticks. I'm not sure if this is going to work but I'm going to try it. Hold on!
 
-````
+```
     ```
     h5 {
 	   /* Your crazy formatting goes here */
     }
     ```
-````
+```
 
 Wow! That worked. Whew.
 
 ###### Here is a note for a section
 
-You _are_ writing a manifesto, aren't you.[^1]
+You *are* writing a manifesto, aren't you.[^1]
 
 In the above sentence, you'll note that I added some emphasis. There are several ways to do that. Observe the list of hipster words below feigning as a normal paragraph:
 
-This is a typical paragraph made up of hipster words and formatting options like bold, italic and emphasis. PBR literally lomo keffiyeh butcher. Gentrify unicorn literally, yr etsy hammock DIY heirloom. Drinking vinegar _mlkshk iPhone_ brunch authentic neutra yes plz hashtag shaman vice. Single-origin coffee subway tile everyday carry raw denim vinyl four loko bushwick. _Asymmetrical polaroid butcher mixtape_, enamel pin cronut offal PBR&B swag lyft yuccie vice direct trade salvia fingerstache. Blog YOLO farm-to-table, **_authentic pok pok_** small batch man bun neutra freegan banh mi craft beer meggings **gatekeep**.
+This is a typical paragraph made up of hipster words and formatting options like bold, italic and emphasis. PBR literally lomo keffiyeh butcher. Gentrify unicorn literally, yr etsy hammock DIY heirloom. Drinking vinegar *mlkshk iPhone* brunch authentic neutra yes plz hashtag shaman vice. Single-origin coffee subway tile everyday carry raw denim vinyl four loko bushwick. _Asymmetrical polaroid butcher mixtape_, enamel pin cronut offal PBR&B swag lyft yuccie vice direct trade salvia fingerstache. Blog YOLO farm-to-table, ***authentic pok pok*** small batch man bun neutra freegan banh mi craft beer meggings **gatekeep**.
 
-- One asterisk (`*`) surrounding a word will get you italics.
-- Two asterisks (`**`) will get you bold text.
-- An underscore (`_`) will get you italics.
-- _Two_ underscores (`__`) will get you bold again.
++ One asterisk (`*`) surrounding a word will get you italics.
++ Two asterisks (`**`) will get you bold text.
++ An underscore (`_`) will get you italics.
++ *Two* underscores (`__`) will get you bold again.
 
 Oh. Are you wondering how I did the unordered list above in markdown. Read on!
 
@@ -83,10 +81,10 @@ Oh. Are you wondering how I did the unordered list above in markdown. Read on!
 
 This is an unordered list in that there are no numerals. Some people call this cardinal ordering. Generally the order of the items don't matter. Perhaps they're unrelated.
 
-- Banana
-- Vehicle
-- Television
-- Not a moon
++ Banana
++ Vehicle
++ Television
++ Not a moon
 
 You can accomplish this by simply using an asterisk or a plus sign or a dash at the beginning of the line.
 
@@ -118,23 +116,23 @@ See how I just put the number one for every line? Markdown parsers see that you 
 
 That's an ordered list because those are the five best Marvel movies. There are numbers there to show the order, because **THERE IS NO OTHER ORDER**.
 
-Sometimes it so happens that you want an _unordered_ list, but you want it to start with a number. God, you're picky. There's a way to do it though. You need to
+Sometimes it so happens that you want an *unordered* list, but you want it to start with a number. God, you're picky. There's a way to do it though. You need to 
 
 Moving on.
 
 You can also have sub-lists in lists of course. Just indent items with spaces.
 
 1. Cars
-   1. Sports Cars
-      1. Corvette
-      1. Ferrarri
-      1. Porsche
-   1. Boring Cars
-      1. That one Ford
-      1. That one by Chrysler (if they're still around)
-      1. Um. A Volvo
+	1. Sports Cars
+	    1. Corvette
+	    1. Ferrarri
+	    1. Porsche
+    1. Boring Cars
+	    1. That one Ford
+	    1. That one by Chrysler (if they're still around)
+	    1. Um. A Volvo
 1. Trucks
-   1. Big trucks
+    1. Big trucks
 
 You get the idea. At least, I hope you get the idea because I am done with that very boring list. I'll try to think of more interesting formatting examples going forward, I promise.
 
@@ -146,19 +144,18 @@ Sometimes you're writing a big long paragraph about something and maybe you dire
 
 #### Blockquotes with multiple paragraphs
 
-You can put line breaks, space, and even nested blockquotes inside blockquotes. I honestly can't think of an example here. Why would you put a blockquote _inside_ another block quote? You'd have to be doing something pretty meta I think. "[House of Leaves](https://www.goodreads.com/book/show/24800.House_of_Leaves)" type shit.
+You can put line breaks, space, and even nested blockquotes inside blockquotes. I honestly can't think of an example here. Why would you put a blockquote *inside* another block quote? You'd have to be doing something pretty meta I think. "[House of Leaves](https://www.goodreads.com/book/show/24800.House_of_Leaves)" type shit.
 
 > My editor thought, kindly, to set this bit apart.
->
+> 
 > And then there was this other thing, not quite related that was also set apart.
->
-> > "I'm the editor and I approve of setting these bits apart." [ed.]
+>> "I'm the editor and I approve of setting these bits apart." [ed.]
 
 You can do that like this:
 
 ```
 > My editor thought, kindly, to set this bit apart.
->
+> 
 > And then there was this other thing, not quite related that was also set apart.
 >> "I'm the editor and I approve of setting these bits apart." [ed.]
 ```
@@ -172,8 +169,8 @@ Blockquotes are beginning to try my patience. Just put the clever bit aside alre
 > - Revenue was drawn to the floor.
 > - Mark made that stupid joke at the board meeting.
 > - Tyler mixed several metaphors when he said:
->
-> "We have _got_ to slow down this **speeding bullet**."
+> 
+>  "We have *got* to slow down this **speeding bullet**."
 
 Wow. What was Tyler thinking? I don't know but I will tell you this for free: I was at a meeting where that actual phrase was spoken. I have changed the name to protect the innocent. We did, however, have to stop the meeting and discuss it.
 
@@ -184,7 +181,7 @@ a haiku might do the trick
 with thoughtful line breaks
 
 You're just, one with everything, you know, man. You just want to  
-_express_ yourself.
+*express* yourself.
 I get it. I do. You need line breaks. And luckily for us poet-types, there're really easy to create in markdown. Just put  
 two spaces at the  
 end of the line.
@@ -193,17 +190,17 @@ Groovy.
 
 ### Links
 
-When I was a young developer, links were everything. That the web was open source and owned by no one and that anyone could add pages to it that linked to other pages; there was magic in that architecture. From [the first web page](http://info.cern.ch/hypertext/WWW/TheProject.html) on that's what built the web; made the web the web as far as I'm concerned.
+When I was a young developer, links were everything.   That the web was open source and owned by no one and that anyone could add pages to it that linked to other pages; there was magic in that architecture. From [the first web page](http://info.cern.ch/hypertext/WWW/TheProject.html) on that's what built the web; made the web the web as far as I'm concerned.
 
-So, if you (wisely) want to include links in your markdown doc, have I got news for you: it's _way_ easier than HTML.
+So, if you (wisely) want to include links in your markdown doc, have I got news for you: it's *way* easier than HTML.
 
-HTML:
+HTML: 
 
-`<a href="http://info.cern.ch/hypertext/WWW/TheProject.html">the first web page</a>`
+```<a href="http://info.cern.ch/hypertext/WWW/TheProject.html">the first web page</a>```
 
 Markdown:
 
-`[the first web page](https://bit.ly/3sg8Ay3)`
+```[the first web page](https://bit.ly/3sg8Ay3)```
 
 Add in some URL shortener and you've got a piece of cake!
 
@@ -229,7 +226,11 @@ Time Burner's Lee created [the first web page][1]
 
 To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title in quotation marks after the path or URL.
 
+
+
+
 [^1]: You clicked on the first footnote! It's cool. I'm writing a manifesto too. It's about how celebrity in the United States is destroying out culture. I might give you a link to it somewhere in here. I'm also thinking about moving to Canada, the Netherlands, Ireland or Australia. Also, I'm not ready to explain footnotes yet. Keep reading.
 
 [1]: https://bit.ly/3sg8Ay3
-[2]: https://bit.ly/3sg8Ay3 'Web history'
+
+[2]: <https://bit.ly/3sg8Ay3> "Web history"
