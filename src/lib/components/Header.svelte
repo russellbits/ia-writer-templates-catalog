@@ -1,30 +1,19 @@
-<div class="headerInterior">
-	<div>
-		<a href="/">IA Template Development Page</a> from
-		<a href="http//:russellbits.com">Russellbits</a>
-	</div>
-	<div class="right">
-		<a href="/about">About</a>
-	</div>
-</div>
+<header>
+	<h1><a href="/">IA Template Development Page</a></h1>
+	<p>from<a href="http//:russellbits.com">Russellbits</a></p>
+</header>
 
 <style>
-	/* flexbox in the header */
-	.headerInterior {
-		font-family: 'IBM Plex Serif', serif;
-		font-size: 36px;
+	header {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
 	}
-	.headerInterior div {
-		flex-grow: 1;
-		padding: 15px;
+	header h1 {
+		padding: 0;
+		margin: 0;
 	}
-	.headerInterior div.right {
-		text-align: right;
-	}
-	.headerInterior a {
+	header a {
 		color: white;
 	}
 </style>

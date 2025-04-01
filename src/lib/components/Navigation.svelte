@@ -1,9 +1,9 @@
 <script>
-	import Text from '$lib/components/TemplateNavText.md';
+	import Text from '$lib/components/NavigationText.md';
 </script>
 
 <div>
-	<Text />
+	<h3>Navigation Here</h3>
 </div>
 
 <style>
