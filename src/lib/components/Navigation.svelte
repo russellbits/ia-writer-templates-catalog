@@ -15,23 +15,22 @@
 <nav class="nav-container">
 	<div class="templates-grid">
 		{#each templates as template}
-			<button
-				class="template-card"
-				class:selected={template.id === selectedTemplate.id}
-				on:click={() => selectTemplate(template)}
-			>
-				<div class="preview-wrapper">
-					<img
-						src={template.previewImage}
-						alt={`Preview of ${template.name} template`}
-						class="preview-image"
-					/>
-				</div>
-				<div class="template-info">
-					<h3>{template.name}</h3>
-					<p class="description">{template.description}</p>
-				</div>
-			</button>
+			<div class="template-card" class:selected={template.id === selectedTemplate.id}>
+				<button class="preview-button" on:click={() => selectTemplate(template)}>
+					<div class="preview-wrapper">
+						<img
+							src={template.previewImage}
+							alt={`Preview of ${template.name} template`}
+							class="preview-image"
+						/>
+					</div>
+					<div class="template-info">
+						<h3>{template.name}</h3>
+						<p class="description">{template.description}</p>
+					</div>
+				</button>
+				<a href={`/${template.id}/download`} class="download-button"> Download Template </a>
+			</div>
 		{/each}
 	</div>
 </nav>
@@ -48,7 +47,7 @@
 	.templates-grid {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 1.5rem;
 	}
 
 	.template-card {
@@ -60,9 +59,20 @@
 		border-radius: 8px;
 		background: none;
 		color: inherit;
+		transition: all 0.2s ease;
+	}
+
+	.preview-button {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 0;
+		border: none;
+		background: none;
+		color: inherit;
 		cursor: pointer;
 		text-align: left;
-		transition: all 0.2s ease;
+		width: 100%;
 	}
 
 	.template-card:hover {
@@ -107,5 +117,22 @@
 		font-size: 0.9rem;
 		line-height: 1.4;
 		opacity: 0.9;
+	}
+
+	.download-button {
+		display: inline-block;
+		padding: 0.75rem 1rem;
+		background-color: #0066cc;
+		color: white;
+		text-decoration: none;
+		border-radius: 4px;
+		text-align: center;
+		font-size: 0.9rem;
+		font-weight: 500;
+		transition: background-color 0.2s ease;
+	}
+
+	.download-button:hover {
+		background-color: #0052a3;
 	}
 </style>
