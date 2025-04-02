@@ -20,18 +20,20 @@
 				<head>
 					<link rel="stylesheet" href="${$selectedStylesheet}">
 					<style>
+            html {
+              background-color: #909090;
+            }
 						body {
-							margin: 0;
-							padding: 2rem;
-						}
-						#content {
-							max-width: 65ch;
-							margin: 0 auto;
+						  max-width: 8.5in;	
+              margin: 2em auto;
+							padding: 2em;
+              background-color: #fff;
+              box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 						}
 					</style>
 				</head>
 				<body>
-					<div id="content">${marked(markdownContent)}</div>
+					${marked(markdownContent)}
 				</body>
 			</html>
 		`);
@@ -45,17 +47,11 @@
 </script>
 
 <main>
-	<iframe
-		title="preview"
-		bind:this={iframe}
-		class="preview-frame"
-		sandbox="allow-same-origin"
-	/>
+	<iframe title="preview" bind:this={iframe} class="preview-frame" sandbox="allow-same-origin" />
 </main>
 
 <style>
 	main {
-		background-color: white;
 		height: 100%;
 		overflow-y: auto;
 	}
