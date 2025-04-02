@@ -1,4 +1,5 @@
 <script>
+	import '$lib/stylesheets/ui.scss';
 	import Header from '$lib/components/Header.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
 </script>
@@ -18,14 +19,6 @@
 </main>
 
 <style lang="scss">
-	@font-face {
-		font-family: 'IBM Plex Serif';
-		font-style: normal;
-		font-weight: 500;
-		src: url('/fonts/IBM-Plex/ibmplexserif-bold-webfont.woff2') format('woff2'),
-			url('/fonts/IBM-Plex/ibmplexserif-bold-webfont.woff') format('woff');
-	}
-
 	:root {
 		font-size: 18px;
 		color: white;
