@@ -2,10 +2,9 @@
 	import { onMount } from 'svelte';
 	import { marked } from 'marked';
 	import { selectedStylesheet } from '$lib/stores/stylesheet';
-	import markdownContent from './basic-markdown-syntax.md?raw';
+	import markdownContent from './basic-markdown.md?raw';
 
 	let iframe;
-	let content = '';
 
 	$: if (iframe?.contentDocument && $selectedStylesheet) {
 		updateIframeContent();
