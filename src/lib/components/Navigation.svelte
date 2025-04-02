@@ -29,7 +29,7 @@
 						<p class="description">{template.description}</p>
 					</div>
 				</button>
-				<a href={`/${template.id}/download`} class="download-button"> Download Template </a>
+				<a href={`/${template.id}.iatemplate.zip`} download class="download-button">Download Template</a>
 			</div>
 		{/each}
 	</div>
