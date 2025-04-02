@@ -1,5 +1,4 @@
 <script>
-	import Text from '$lib/components/NavigationText.md';
 	import { selectedStylesheet } from '$lib/stores/stylesheet';
 	import templateData from '$lib/data/templates.json';
 
@@ -29,7 +28,9 @@
 						<p class="description">{template.description}</p>
 					</div>
 				</button>
-				<a href={`/${template.id}.iatemplate.zip`} download class="download-button">Download Template</a>
+				<a href={`/${template.id}.iatemplate.zip`} download class="download-button"
+					>Download Template</a
+				>
 			</div>
 		{/each}
 	</div>
